@@ -15,6 +15,6 @@ Principais funcionalidades:
 - **JavaScript**: iteração e consumo dos recursos da API.
 
 ---
-## Execução da Api
+## Execução da aplicação
 
 Basta copiar o endereço (path) do arquivo `index.hmtl` e colar na barra de navegação de qualuer navegador.
