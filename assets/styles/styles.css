@@ -1,0 +1,199 @@
+/* https://tailwindcss.com/docs/customizing-colors */
+:root {
+  --zinc-100: #fafafa;
+  --gray-200: #e5e7eb;
+  --gray-400: #9ca3af;
+  --red-200: #fecaca;
+  --red-500: #ef4444;
+  --green-200: #bbf7d0;
+  --green-500: #22c55e;
+  font-family: 'Poppins', sans-serif;
+  font-size: .9rem;
+}
+
+.--analize {
+  background: var(--gray-200);
+}
+.--positive {
+  background: var(--red-200);
+}
+.--negative {
+  background: var(--green-200);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 2rem;
+}
+
+button {
+  border: none;
+  padding: .7rem;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button.primary {
+  background: black;
+  color: white;  
+  margin-top: 1rem;
+}
+
+section {
+  padding: 0 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+header h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: var(--zinc-100);
+  box-shadow: 5px 0px 20px 0px var(--gray-400);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.form .__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  gap: .5rem;
+}
+.form .__field label {
+  font-weight: 500;
+}
+.form .__field input {
+  width: 100px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border: none;
+  background: var(--gray-200);
+  outline: none;
+}
+.form .__field input#name {
+  width: 400px
+}
+
+@media (max-width: 600px) {
+  .form .__field input#name {
+    width: 350px;
+  }
+}
+@media (max-width: 470px) {
+  .form .__field input#name {
+    width: 200px;
+  }
+}
+
+.form .__actions {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 2rem
+}
+
+.result {
+  margin: 1.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 8px;
+}
+
+.result.--analize {
+  border: 2px solid var(--gray-400);
+}
+.result.--positive {
+  border: 2px solid var(--red-500);
+}
+.result.--negative {
+  border: 2px solid var(--green-500);
+}
+
+.results table {
+  width: 100%;
+  text-align: left;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 5px 0px 20px 0px var(--gray-400);
+}
+
+.results table th, td {
+  padding: 1rem 1rem;
+  font-weight: 300;
+}
+
+.results table th {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
+
+.results table tr {
+  background-color: var(--gray-200);
+  border-top: 1px solid var(--gray-400);
+}
+.results table tr:nth-child(odd) {
+  background-color: var(--gray-100);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2f2f2f;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  color: white;
+  position: absolute;
+  bottom: 0
+}
+
+footer h4 {
+  font-size: 1rem
+}
